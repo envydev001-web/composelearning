@@ -25,6 +25,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: unit-test-report
+          path: app/build/reports/tests/
   build:
     runs-on: ubuntu-latest
     needs: test
